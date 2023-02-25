@@ -1,0 +1,95 @@
+<style>
+  /* Project section */
+  .button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 15px 25px;
+    font-size: 24px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .button:hover {
+    background-color: #fff;
+    color: #444;
+  }
+
+  #projectList {
+    background-color: rgba(99, 96, 107, 0.416);
+    color: #444;
+    padding: 20px;
+    display: none;
+  }
+
+  #projectList ul {
+    list-style: none;
+    margin: 5px;
+    padding: 2px;
+  }
+
+  #projectList li {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 30px;
+  }
+
+  #projectList li:last-child {
+    border-bottom: none;
+  }
+
+  #projectList a {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #444;
+    transition: all 0.3s ease-in-out;
+  }
+
+  #projectList a:hover {
+    color: #fff;
+    background-color: #444;
+  }
+
+  #projectList p {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  footer {
+    background-color: yellow;
+  }
+</style>
+
+<button class="button" onclick="showProjects()">View Projects</button>
+<div id="projectList" style="display: style;">
+  <ul>
+    <li>
+      <a href="https://prashantsharma3.github.io/Newsfeed/" target="_blank">
+        1 NewsFeed</a
+      >
+      <p>website for Good News</p>
+    </li>
+    <li>
+      <a href="https://prashantsharma3.github.io/Weather-App/" target="_blank"
+        >2 Weather App</a
+      >
+      <p>
+        it's provide realtime Information
+      </p>
+    </li>
+  </ul>
+</div>
+<footer>
+  <p>For more Please visit my Github Profile In Contacts</p>
+</footer>
+<script>
+  function showProjects() {
+    var projectList = document.getElementById("projectList");
+    if (projectList.style.display === "none") {
+      projectList.style.display = "block";
+    } else {
+      projectList.style.display = "none";
+    }
+  }
+</script>
